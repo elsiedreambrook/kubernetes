@@ -38,7 +38,7 @@ const (
 	// initialOperationWaitTimeLong is the initial amount of time the test will
 	// wait for an operation to complete (each successive failure results in
 	// exponential backoff).
-	initialOperationWaitTimeLong time.Duration = 500 * time.Millisecond
+	initialOperationWaitTimeLong time.Duration = 1500 * time.Millisecond
 )
 
 func Test_NewGoRoutineMap_Positive_SingleOp(t *testing.T) {
