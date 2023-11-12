@@ -44,11 +44,6 @@ type GoRoutineMap interface {
 	// a new operation to be started with the same operation name without error.
 	Run(operationName string, operationFunc func() error) error
 
-	// Wait blocks until operations map is empty. This is typically
-	// necessary during tests - the test should wait until all operations finish
-	// and evaluate results after that.
-	Wait()
-
 	// WaitForCompletion blocks until either all operations have successfully completed
 	// or have failed but are not pending. The test should wait until operations are either
 	// complete or have failed.
