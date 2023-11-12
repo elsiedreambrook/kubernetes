@@ -52,7 +52,7 @@ func Test_NewGoRoutineMap_Positive_SingleOp(t *testing.T) {
 
 	// Assert
 	if err != nil {
-		t.Fatalf("NewGoRoutine failed. Expected: <no error> Actual: <%v>", err)
+		t.Fatalf("NewGoRoutine : <%v>", err)
 	}
 }
 
